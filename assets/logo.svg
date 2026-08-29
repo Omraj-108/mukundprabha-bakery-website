@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Premium Golden Gradient -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#AA7C11" />
+      <stop offset="30%" stop-color="#F4B400" />
+      <stop offset="70%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#AA7C11" />
+    </linearGradient>
+    
+    <!-- Soft Red Glow Filter for SVG Elements -->
+    <filter id="red-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Glow Circle (Subtle Red Glow) -->
+  <circle cx="100" cy="100" r="75" fill="none" stroke="#C8102E" stroke-width="2" opacity="0.3" filter="url(#red-glow)" />
+
+  <!-- Outer Traditional Star/Sunburst Radiance (Prabha) -->
+  <g stroke="url(#gold-grad)" stroke-width="1.5" fill="none" opacity="0.8">
+    <circle cx="100" cy="100" r="85" stroke-dasharray="2, 6" />
+    <circle cx="100" cy="100" r="80" />
+  </g>
+
+  <!-- Inner Elegant Border -->
+  <circle cx="100" cy="100" r="68" fill="none" stroke="url(#gold-grad)" stroke-width="2" />
+
+  <!-- Stylized Wheat Stalks (Left & Right) representing Bakery -->
+  <g fill="url(#gold-grad)">
+    <!-- Left Stalk -->
+    <path d="M 65 130 C 55 110 55 90 65 70 C 66 68 68 70 67 72 C 61 88 61 106 67 122 C 68 124 66 126 65 130 Z" opacity="0.7"/>
+    <!-- Left Grains -->
+    <path d="M 61 74 C 57 73 54 75 54 78 C 54 81 58 81 61 79 Z" />
+    <path d="M 59 86 C 54 85 51 87 51 90 C 51 93 55 93 59 91 Z" />
+    <path d="M 58 98 C 53 97 50 99 50 102 C 50 105 54 105 58 103 Z" />
+    <path d="M 59 110 C 54 109 52 111 52 114 C 52 117 56 117 59 115 Z" />
+    
+    <!-- Right Stalk -->
+    <path d="M 135 130 C 145 110 145 90 135 70 C 134 68 132 70 133 72 C 139 88 139 106 133 122 C 132 124 134 126 135 130 Z" opacity="0.7"/>
+    <!-- Right Grains -->
+    <path d="M 139 74 C 143 73 146 75 146 78 C 146 81 142 81 139 79 Z" />
+    <path d="M 141 86 C 146 85 149 87 149 90 C 149 93 145 93 141 91 Z" />
+    <path d="M 142 98 C 147 97 150 99 150 102 C 150 105 146 105 142 103 Z" />
+    <path d="M 141 110 C 146 109 148 111 148 114 C 148 117 144 117 141 115 Z" />
+  </g>
+
+  <!-- Traditional Sweet Platter (Plate with Laddoos / Modak Shape in Center) -->
+  <g transform="translate(100, 105) scale(0.95)">
+    <!-- Base Plate -->
+    <path d="M -30 10 Q 0 18 30 10 Q 32 6 30 2 Q 0 8 -30 2 Q -32 6 -30 10 Z" fill="url(#gold-grad)" />
+    <!-- Pedestal -->
+    <path d="M -10 11 L -15 20 Q 0 23 15 20 L 10 11 Z" fill="url(#gold-grad)" opacity="0.9" />
+    
+    <!-- Laddoos stacked in a triangle -->
+    <!-- Row 1 (Bottom) -->
+    <circle cx="-16" cy="-1" r="9" fill="url(#gold-grad)" stroke="#0F0F0F" stroke-width="0.5" />
+    <circle cx="0" cy="1" r="9.5" fill="url(#gold-grad)" stroke="#0F0F0F" stroke-width="0.5" />
+    <circle cx="16" cy="-1" r="9" fill="url(#gold-grad)" stroke="#0F0F0F" stroke-width="0.5" />
+    <!-- Row 2 -->
+    <circle cx="-8" cy="-13" r="9" fill="url(#gold-grad)" stroke="#0F0F0F" stroke-width="0.5" />
+    <circle cx="8" cy="-13" r="9" fill="url(#gold-grad)" stroke="#0F0F0F" stroke-width="0.5" />
+    <!-- Row 3 (Top - Modak style pointy tip laddoo) -->
+    <path d="M 0 -35 C -8 -25 -6 -20 0 -20 C 6 -20 8 -25 0 -35 Z" fill="url(#gold-grad)" stroke="#0F0F0F" stroke-width="0.5" />
+  </g>
+
+  <!-- Glowing Prabha (Sparkle) on top -->
+  <path d="M 100 35 L 102 43 L 110 45 L 102 47 L 100 55 L 98 47 L 90 45 L 98 43 Z" fill="url(#gold-grad)" filter="url(#red-glow)" opacity="0.9" />
+  <circle cx="100" cy="45" r="2" fill="#FFFFFF" />
+</svg>
